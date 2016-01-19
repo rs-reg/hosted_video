@@ -8,19 +8,26 @@
 .player{
 	width: 320px;
 	height: 180px;
-	/*border: 1px solid gray;*/
 	margin: 0 auto;
 	cursor: pointer;
 }
 
 #vid{
 	position: absolute;
-    	margin-top: -184px;
-    	width: 320px;
-    	height: 180px;
-    	cursor: pointer;
+	cursor: pointer;
+	top: 100px;
 }
 
 .hidden{
-	display: none;
+	display: none !important;
+}
+
+#btnplay {
+	width: 20%;
+	margin: -109px auto;
+	display: block;
+	cursor: pointer;
+	z-index: 10;
+	position: relative;
+	opacity: 0.2;
 }
