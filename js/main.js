@@ -11,6 +11,7 @@ hosted_video.prototype.renderimage = function(){
 	var _this = this;
 	// if(/Mobi/.test(navigator.userAgent)){ //this code is use to check for mobile devices, if mobile, then render images, else play video.
 		this.interval = setInterval(function(){ 
+			document.querySelector('#btnplay').className = '';
 			base = new Image();
 			base.src = 'https://rmarepo.richmediaads.com/140/images/autoplay/0j82wfm9529/image_'+ _this.counter +'.jpg';
 			base.onload = function(){
@@ -57,8 +58,13 @@ hosted_video.prototype.events = function(){
 	});
 }
 
-h = new hosted_video();
 
 
+document.onreadystatechange = function () {
+	if (document.readyState == "complete") {
+		h = new hosted_video();
+		console.log('ready');
+	}
+}
 
 

@@ -1,7 +1,7 @@
 .container{
-	width: 320px;
-	height: 180px;
-	margin: 100px auto;
+	/*width: 320px;*/
+	/*height: 180px;*/
+	/*margin: 100px auto;*/
 	display: block;
 }
 
@@ -15,7 +15,7 @@
 #vid{
 	position: absolute;
 	cursor: pointer;
-	top: 100px;
+	top: 152px;
 }
 
 .hidden{
@@ -23,11 +23,24 @@
 }
 
 #btnplay {
-	width: 20%;
-	margin: -109px auto;
+	width: 5%;
+	margin: -109px 122px;
 	display: block;
 	cursor: pointer;
 	z-index: 10;
-	position: relative;
+	position: absolute;
 	opacity: 0.2;
+}
+
+table{
+	border-collapse: collapse;
+	margin: 100px auto;
+}
+
+table > thead > tr{
+	height: 50px;
+}
+
+table, th, td {
+	border: 1px solid grey;
 }

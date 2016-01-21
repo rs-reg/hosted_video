@@ -10,17 +10,42 @@
 </head>
 <body>
 	<div class="container">
-		<canvas class="player" id="player"></canvas>
-		<img src="img/play.png" id="btnplay" alt="">
-		<video id="vid" class="hidden" autobuffer autoloop loop controls>
-			<source src="https://rmarepo.richmediaads.com/140/videos/GALAXY_S4_Official.mp4">
-			<object type="video/mp4" data="https://rmarepo.richmediaads.com/140/videos/GALAXY_S4_Official.mp4" width="320" height="240">
-			<param name="src" value="https://rmarepo.richmediaads.com/140/videos/GALAXY_S4_Official.mp4">
-			<param name="autoplay" value="false">
-			<param name="autoStart" value="0">
-			<p><a href="https://rmarepo.richmediaads.com/140/videos/GALAXY_S4_Official.mp4">Download this video file.</a></p>
-			</object>
-		</video>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>New Video</th>
+					<th>Old Video</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="left">
+						<canvas class="player" id="player"></canvas>
+						<img src="img/play.png" id="btnplay" class="hidden" alt="">
+						<video id="vid" class="hidden" autobuffer autoloop loop controls>
+							<source src="https://rmarepo.richmediaads.com/140/videos/GALAXY_S4_Official.mp4">
+							<object type="video/mp4" data="https://rmarepo.richmediaads.com/140/videos/GALAXY_S4_Official.mp4" width="320" height="240">
+							<param name="src" value="https://rmarepo.richmediaads.com/140/videos/GALAXY_S4_Official.mp4">
+							<param name="autoplay" value="false">
+							<param name="autoStart" value="0">
+							<p><a href="https://rmarepo.richmediaads.com/140/videos/GALAXY_S4_Official.mp4">Download this video file.</a></p>
+							</object>
+						</video>
+					</td>
+					<td class="right">
+						<video id="vid_old" autobuffer autoloop loop controls>
+							<source src="https://rmarepo.richmediaads.com/140/videos/GALAXY_S4_Official.mp4">
+							<object type="video/mp4" data="https://rmarepo.richmediaads.com/140/videos/GALAXY_S4_Official.mp4" width="320" height="240">
+							<param name="src" value="https://rmarepo.richmediaads.com/140/videos/GALAXY_S4_Official.mp4">
+							<param name="autoplay" value="false">
+							<param name="autoStart" value="0">
+							<p><a href="https://rmarepo.richmediaads.com/140/videos/GALAXY_S4_Official.mp4">Download this video file.</a></p>
+							</object>
+						</video>
+					</td>
+				</tr>
+			</tbody>
+		</table>
 	</div>
 	<script src="js/main.js" type="text/javascript" charset="utf-8" async defer></script>
 </body>
