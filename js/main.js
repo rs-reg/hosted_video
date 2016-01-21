@@ -58,13 +58,21 @@ hosted_video.prototype.events = function(){
 	});
 }
 
+hosted_video.prototype.preload = function(){
+	var _this = this;
+	var script = document.createElement('SCRIPT');
+	var str = '';
+	for(i = 1; i <=150; i++){
+		str +=  'var image_'+ i + '= new Image(); image_'+i+'.src="https://rmarepo.richmediaads.com/140/images/autoplay/0j82wfm9529/image_'+i+'.jpg";';
+	}
+	script.innerHTML = str;
+	document.getElementsByTagName('body')[0].appendChild(script);
+}
 
+hosted_video.prototype.preload();
 
 document.onreadystatechange = function () {
 	if (document.readyState == "complete") {
 		h = new hosted_video();
-		console.log('ready');
 	}
 }
-
-
